@@ -1,12 +1,14 @@
 @define-color background #1E1E1E;
-@define-color foreground #38D5D5;
+@define-color foreground #E742E7;
+@define-color black #858585;
+@define-color red #FF4949;
 @define-color green #36DB36;
 @define-color yellow #CFCF2A;
-@define-color red #FF4949;
 @define-color blue #7E7EFF;
+@define-color magenta #E742E7;
 @define-color cyan #38D5D5;
-@define-color black #858585;
 @define-color white #D4D4D4;
+
 
 window#waybar * {
   font-weight: 900;
@@ -14,12 +16,12 @@ window#waybar * {
 }
 
 window#waybar #workspaces button.empty { opacity: 0.2; }
-window#waybar #custom-omarchy { color: @blue;}
+window#waybar #custom-omarchy { color: @white;}
 window#waybar #clock { color: @white;}
-window#waybar #custom-expand-icon { color: @cyan;}
-window#waybar #tray { color: @cyan;}
-window#waybar #cpu { color: @blue;}
-window#waybar #custom-update {color: @cyan;}
+window#waybar #custom-expand-icon { color: @white;}
+window#waybar #tray { color: @white;}
+window#waybar #cpu { color: @white;}
+window#waybar #custom-update {color: @green;}
 
 /* 🔋 BATTERY */
 #battery { color: @foreground; }
@@ -29,8 +31,8 @@ window#waybar #custom-update {color: @cyan;}
 
 /* 🌐 NETWORK (green=Connected, red=Off/Searching) */
 window#waybar #network.wifi,
-window#waybar #network.ethernet { color: @green; } 
-window#waybar #network { color: @red; }
+window#waybar #network.ethernet
+window#waybar #network { color: @green; }
 window#waybar #network.disconnected { color: @red; }
 
 /*  BLUETOOTH (green=Connected, yellow=On/Searching, Red=Off/Dead) */
@@ -41,7 +43,7 @@ window#waybar #bluetooth.off,
 window#waybar #bluetooth.disabled { color: @red; }
 
 /*  AUDIO (Variable: cyan=Active, Red=Muted) */
-window#waybar #pulseaudio { color: @cyan; }
+window#waybar #pulseaudio { color: @green; }
 window#waybar #pulseaudio.muted { color: @red; }
 
 /* 🔴 ALERT STATES */
@@ -54,6 +56,6 @@ window#waybar #custom-notification-silencing-indicator.active {
 
 tooltip {
   background-color: @background;
-  border: 3px solid @cyan;
+  border: 3px solid @magenta;
   font-weight: bold;
 }
