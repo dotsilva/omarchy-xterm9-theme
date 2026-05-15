@@ -21,7 +21,7 @@ image#osd {
 
 progressbar#osd {
   border-radius: 0;
-    background-color: @progressbar;
+    color: @background;
 }
 
 progress#osd {
