@@ -5,7 +5,7 @@
 @define-color progress #E742E7;
 
 window#osd {
-    border-radius: 20px;
+    border-radius: 0px;
     opacity: 1.0;
-    border: 20px solid @border-color;
+    border: 3px solid @border-color;
 }
