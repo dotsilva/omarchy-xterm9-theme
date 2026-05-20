@@ -15,10 +15,7 @@ window#waybar * {
   font-size: 14px;
 }
 
-window#waybar #workspaces button.empty {
-    color: @black;
-    opacity: 1.0;
-}
+window#waybar #workspaces button.empty { opacity: 0;}
 window#waybar #custom-omarchy { color: @white;}
 window#waybar #clock { color: @white;}
 window#waybar #custom-expand-icon { color: @white;}
