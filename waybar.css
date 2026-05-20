@@ -31,9 +31,9 @@ window#waybar #custom-update {color: @green;}
 
 /* 🌐 NETWORK (green=Connected, red=Off/Searching) */
 window#waybar #network.wifi,
-window#waybar #network.ethernet
-window#waybar #network { color: @green; }
+window#waybar #network.ethernet {color: @green;}
 window#waybar #network.disconnected { color: @red; }
+window#waybar #network { color: @red; }
 
 /*  BLUETOOTH (green=Connected, yellow=On/Searching, Red=Off/Dead) */
 window#waybar #bluetooth.connected { color: @green; }
